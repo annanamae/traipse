@@ -1,11 +1,6 @@
-<footer class="site-footer">
-  <div class="wrapper">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}.</p>
-    <p class="social">
-      {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}">GitHub</a>{% endif %}
-      {% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a>{% endif %}
-      {% if site.social.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>{% endif %}
-      {% if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
-    </p>
-  </div>
+<footer class="footer">
+  {% for item in site.data.settings.social %}
+    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+  {% endfor %}
+  <div class="footer-description"><a href="{{ site.baseurl }}/">{{ site.title }} | {{ site.description }} by {{ site.author }}</a></div>
 </footer>

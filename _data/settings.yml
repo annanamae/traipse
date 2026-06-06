@@ -1,0 +1,30 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: ''
+
+# If you are not using Google Analytics, leave 'google-ID' as an empty string
+google-ID: ''
+
+# Menu items link to pages in the /pages folder (by their permalink)
+menu:
+- {name: 'About',    url: 'about'}
+- {name: 'Contact',  url: 'contact'}
+
+# Social icons are powered by Font Awesome — use any icon name they offer.
+# Delete the lines you don't need; fill in your own links.
+social:
+- {icon: 'github',     link: 'https://github.com/your-username'}
+- {icon: 'envelope',   link: 'mailto:you@example.com'}
+- {icon: 'rss-square', link: 'feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy...'
+
+post_date_prefix: 'Written on'

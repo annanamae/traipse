@@ -1,41 +1,31 @@
-# --- Site settings (edit these per-site) ---------------------------------
-title: My Site
-tagline: A short, punchy description of this site
-description: >-
-  A longer description used for SEO and social cards. Replace this with a
-  sentence or two about who this site is for and what it offers.
-author: Your Name
-email: you@example.com
+# --- Site identity (edit these per-site) ----------------------------------
+title:       "My Site"
+description:  "a short, punchy description of this site"
+author:      "Your Name"
+email:        you@example.com
 
-# The base hostname & protocol for the site, e.g. https://example.com
-# For a GitHub Pages project site this is https://<user>.github.io
-url: "https://example.com"
-# If serving from a subpath (e.g. https://<user>.github.io/<repo>), set baseurl
-# to "/<repo>". Leave as "" for a user/org page or custom domain.
+# The base hostname & protocol for the site.
+url:     "https://www.timlawrence.org"
+# Serving under a subpath (https://host/site-template). Set to "" if this
+# site ever moves to the domain root.
 baseurl: "/site-template"
 
-# --- Social / contact (optional — blank values are hidden) ----------------
-social:
-  github:   your-username
-  twitter:  ""
-  linkedin: ""
+# --- Build settings (Millennial theme) ------------------------------------
+markdown:     kramdown
+highlighter:  rouge
+permalink:    /:title
+paginate:     5
 
-# --- Build settings -------------------------------------------------------
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
-timezone: America/Los_Angeles
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-# Pages/posts default front matter
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: ""
-    values:
-      layout: default
+# Optional feature toggles read by the theme layouts
+hide_post_date:     false
+hide_post_share:    false
+hide_related_posts: false
 
 # Files & folders excluded from the build output
 exclude:
@@ -45,9 +35,3 @@ exclude:
   - README.md
   - .sass-cache
   - .jekyll-cache
-
-# Plugins (all supported by GitHub Pages)
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
