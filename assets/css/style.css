@@ -1,25 +1,36 @@
 /* ---------------------------------------------------------------------------
-   Generic site stylesheet. Tweak the custom properties below to re-skin a site
-   quickly without touching the rest of the rules.
+   Millennial theme — millennial pink + warm pastels, soft rounded corners,
+   geometric sans, lots of whitespace. Tweak the custom properties below to
+   re-skin a site quickly without touching the rest of the rules.
 --------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
-  --color-text:   #1a1a1a;
-  --color-muted:  #6b7280;
-  --color-bg:     #ffffff;
-  --color-accent: #2563eb;
-  --color-border: #e5e7eb;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-text:    #3d2c33;          /* warm near-black plum */
+  --color-muted:   #9a8089;          /* dusty mauve */
+  --color-bg:      #fdf6f3;          /* warm cream */
+  --color-surface: #fffafa;          /* card / surface */
+  --color-accent:  #e89ba6;          /* millennial pink */
+  --color-accent-strong: #d77a8a;    /* deeper rose for hover */
+  --color-border:  #f1dcd9;          /* soft blush border */
+  --gradient: linear-gradient(135deg, #f7cac9 0%, #f3d9c6 50%, #cfe3df 100%);
+  --font-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius: 18px;
+  --radius-pill: 999px;
   --max-width: 720px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text:   #e5e7eb;
-    --color-muted:  #9ca3af;
-    --color-bg:     #0f1115;
-    --color-accent: #60a5fa;
-    --color-border: #272b33;
+    --color-text:    #f3e7ec;
+    --color-muted:   #b89aa5;
+    --color-bg:      #241a20;
+    --color-surface: #2e222a;
+    --color-accent:  #f1a7b3;
+    --color-accent-strong: #f7c0c9;
+    --color-border:  #3c2c34;
+    --gradient: linear-gradient(135deg, #5a3b46 0%, #4a3a3f 50%, #2f4742 100%);
   }
 }
 
@@ -31,7 +42,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);
   display: flex;
@@ -44,63 +55,122 @@ body {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 
-.content { flex: 1 0 auto; padding-top: 2.5rem; padding-bottom: 3rem; }
+.content { flex: 1 0 auto; padding-top: 3rem; padding-bottom: 4rem; }
 
-a { color: var(--color-accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--color-accent-strong); text-decoration: none; font-weight: 500; }
+a:hover { color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; }
 
-h1, h2, h3 { line-height: 1.25; font-weight: 700; }
+h1, h2, h3 { line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
 
 code, pre { font-family: var(--font-mono); }
 pre {
-  background: var(--color-border);
-  padding: 1rem;
-  border-radius: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
   overflow-x: auto;
+}
+:not(pre) > code {
+  background: var(--color-border);
+  padding: 0.1em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--color-muted);
 }
 
 /* --- Header --- */
 .site-header {
+  background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  padding: 1rem 0;
+  padding: 1.1rem 0;
 }
 .site-header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
-.site-title { font-weight: 700; font-size: 1.2rem; color: var(--color-text); }
-.site-nav a { margin-left: 1rem; color: var(--color-muted); }
-.site-nav a:first-child { margin-left: 0; }
+.site-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+.site-nav a {
+  margin-left: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  color: var(--color-muted);
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.site-nav a:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+}
 
 /* --- Hero (home page) --- */
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: 2.4rem; margin: 0 0 0.5rem; }
-.hero .tagline { font-size: 1.25rem; color: var(--color-muted); margin: 0; }
+.hero {
+  background: var(--gradient);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.hero h1 { font-size: 2.8rem; margin: 0 0 0.5rem; color: var(--color-text); }
+.hero .tagline { font-size: 1.3rem; color: var(--color-text); opacity: 0.8; margin: 0; }
 
 /* --- Post list --- */
 .post-list { list-style: none; padding: 0; }
-.post-list li { margin-bottom: 1.5rem; }
-.post-list .post-meta { color: var(--color-muted); font-size: 0.9rem; margin: 0; }
-.post-list h3 { margin: 0.1rem 0; }
+.post-list li {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.post-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(216, 155, 166, 0.18);
+}
+.post-list .post-meta { color: var(--color-muted); font-size: 0.85rem; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; }
+.post-list h3 { margin: 0.25rem 0; }
 
 /* --- Single post --- */
-.post-header { margin-bottom: 1.5rem; }
-.post-title { font-size: 2.1rem; margin: 0 0 0.25rem; }
+.post-header { margin-bottom: 2rem; }
+.post-title { font-size: 2.3rem; margin: 0 0 0.4rem; }
 .post-meta { color: var(--color-muted); font-size: 0.9rem; margin: 0; }
-.back-link { margin-top: 2.5rem; }
+.back-link { margin-top: 3rem; }
+.back-link a {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: var(--radius-pill);
+}
+.back-link a:hover { background: var(--color-accent-strong); text-decoration: none; }
 
 /* --- Footer --- */
 .site-footer {
+  background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   font-size: 0.9rem;
-  padding: 1.5rem 0;
+  padding: 1.75rem 0;
 }
 .site-footer .wrapper {
   display: flex;
