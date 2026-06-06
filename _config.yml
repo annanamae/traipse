@@ -10,7 +10,7 @@ url:     "https://www.timlawrence.org"
 # site ever moves to the domain root.
 baseurl: "/site-template"
 
-# --- Build settings (Millennial theme) ------------------------------------
+# --- Build settings (Example theme) ------------------------------------
 markdown:     kramdown
 highlighter:  rouge
 permalink:    /:title
