@@ -4,11 +4,14 @@ description:  "a short, punchy description of this site"
 author:      "Your Name"
 email:        you@example.com
 
-# The base hostname & protocol for the site.
-url:     "https://www.timlawrence.org"
-# Serving under a subpath (https://host/site-template). Set to "" if this
-# site ever moves to the domain root.
-baseurl: "/site-template"
+# Internal links/assets use `site.github.url`, which GitHub Pages auto-detects
+# per repository — so a fork at user.github.io/<repo> just works with no edits.
+# Leave url/baseurl blank unless you have a reason to override:
+#   - url:     set to your custom domain for canonical SEO links, e.g.
+#              "https://www.example.com" (only affects SEO/feed metadata).
+#   - baseurl: leave "" — do NOT hardcode a repo path here, or forks break.
+url:     ""
+baseurl: ""
 
 # --- Build settings (Example theme) ------------------------------------
 markdown:     kramdown
