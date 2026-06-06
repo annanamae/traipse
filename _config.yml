@@ -12,7 +12,7 @@ email: you@example.com
 url: "https://example.com"
 # If serving from a subpath (e.g. https://<user>.github.io/<repo>), set baseurl
 # to "/<repo>". Leave as "" for a user/org page or custom domain.
-baseurl: ""
+baseurl: "/site-template"
 
 # --- Social / contact (optional — blank values are hidden) ----------------
 social:
