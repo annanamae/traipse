@@ -12,11 +12,13 @@ At its heart, Traipse is built on a beautiful, foundational truth: we are not se
 By mapping our movement together, Traipse turns an invisible, personal practice into a visible, global wave of joy and relief.
 
 **The Impact: Why We Step Outside**
+
 When life feels heavy, overwhelming, or disconnected, the quickest way back to balance is right beneath your toes. This practice has a dual impact:
 For Your Body: Stepping onto the bare dirt naturally drops your nervous system out of fight-or-flight and into a state of calm. It strips away the day's stress and reminds your body how to feel stable, supported, and at home in your own skin.
 For the World: Joy and alignment aren't passive things we just wait to feel. They are active energies we can generate. When you move intentionally on the earth, you send that steady, vibrant frequency right into the ground. Through our interactive map, your individual footprint connects with thousands of others, creating a real-time network of calm and community across the globe.
 
 **How to Move With Us: The Ritual**
+
 You don't need to be a dancer, and you don't need any special equipment. This is a simple, plug-and-play somatic ritual you can practice anytime, anywhere.
 1. Unplug and Unshoe
 Find a patch of grass, dirt, sand, or stone. Kick off your shoes. Take a deep breath and feel the physical weight of your body settling down into your feet.
@@ -25,7 +27,7 @@ Put your headphones in and press play on one of our curated Traipse Playlists, o
 3. Move Your Bones
 Begin to move. There is no choreography and no right way to look. You can dance wildly, stretch deeply, or just stand in vibrant stillness. As you move, imagine your kinetic energy traveling down through the earth. Picture your vibes running through the soil like a live wire, crossing the globe, and rising up to touch the feet of everyone else on the grid. Send your love, your joy, and your resilience directly to the earth, the trees, and to each other.
 4. Pin Your Presence
-5. 
+   
 When you finish your movement, open the Traipse app or scan a local Trail Marker QR Code to drop a pin of exactly where your feet touched the earth. Watch the live global map light up, showing you the exact network of people who are standing on the grid and holding the ground with you.
 
 “True joy isn't a frantic sprint; it’s the calm, steady feeling of a body perfectly tuned to the earth beneath it. Every footprint is an act of service.”
@@ -33,6 +35,7 @@ When you finish your movement, open the Traipse app or scan a local Trail Marker
 
 
 _A Note on Accessibility & Physical Mobility_
+
 Traipse is for every body. If standing, dancing, or barefoot contact with the ground isn't accessible or safe for you, the circuit is still open.
 
 You can connect with this movement exactly as you are:
