@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started"
+title: "Bring Traipse to Your Community"
 author: "Paul Le"
 categories: documentation
 tags: [documentation,sample]
