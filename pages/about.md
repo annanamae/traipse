@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about
+title: Welcome to Traipse
+permalink: /Welcome to Traipse
 ---
-**Welcome to Traipse**
-
 Traipse is a global, interactive ritual + movement project that connects the simple act of barefoot dancing with collective well-being, community connection, and deep grounding.
 
 At its heart, Traipse is built on a beautiful, foundational truth: we are not separate from the world around us. When we step outside, kick off our shoes, and move with intention, something powerful shifts. We aren't just dancing to feel good in our own bodies—we are actively closing a circuit between our feet and the soil, releasing stress and lifting the energy of the entire planet.
@@ -34,16 +32,15 @@ When you finish your movement, open the Traipse app or scan a local Trail Marker
 [Explore the Live Map] • [Listen to Today’s Track] • [Bring Traipse to Your Community]
 
 
+
 _A Note on Accessibility & Physical Mobility_
 
 Traipse is for every body. If standing, dancing, or barefoot contact with the ground isn't accessible or safe for you, the circuit is still open.
 
 You can connect with this movement exactly as you are:
-From a Seat or Bed: Place your hands on the earth, touch a houseplant, or visualize your roots traveling down into the ground beneath your building.
-
-Through Your Wheels: Let the physical vibration of the ground beneath your wheelchair or mobility device be your connection to the grid.
-
-Through Stillness: Close your eyes, play the track, and let your imagination do the moving.
+- From a Seat or Bed: Place your hands on the earth, touch a houseplant, or visualize your roots traveling down into the ground beneath your building.
+- Through Your Wheels: Let the physical vibration of the ground beneath your wheelchair or mobility device be your connection to the grid.
+- Through Stillness: Close your eyes, play the track, and let your imagination do the moving.
 
 Your presence, intention, and energy travel through the earth just as powerfully. When you drop your pin on the map, you are fully on the grid with us.
 
